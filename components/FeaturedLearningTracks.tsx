@@ -24,20 +24,20 @@ const tracks = [
 
 export default function FeaturedLearningTracks() {
   return (
-    <section className="bg-gray-50 dark:bg-gray-800/40 py-12 px-4 border-y border-gray-150 dark:border-gray-850 transition-colors" aria-labelledby="tracks-heading">
+    <section className="bg-gray-50 dark:bg-gray-800/40 py-12 sm:py-16 px-4 sm:px-6 lg:px-8 border-y border-gray-150 dark:border-gray-850 transition-colors" aria-labelledby="tracks-heading">
       <div className="mx-auto max-w-screen-xl">
-        <div className="flex items-center justify-between mb-8">
-          <h2 id="tracks-heading" className="text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+        <div className="flex items-center justify-between gap-4 mb-8">
+          <h2 id="tracks-heading" className="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">
             Featured Learning Tracks
           </h2>
           <Link 
             href="/resources/tracks" 
-            className="text-sm font-semibold text-cyan-600 hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300 transition-colors focus:outline-none focus:underline"
+            className="text-sm font-semibold text-cyan-600 hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300 transition-colors focus:outline-none focus:underline shrink-0"
           >
             View All Tracks &rarr;
           </Link>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {tracks.map((track) => (
             <article
               key={track.title}

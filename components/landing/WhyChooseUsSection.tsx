@@ -71,8 +71,8 @@ const benefits: Benefit[] = [
 
 export default function WhyChooseUsSection() {
   return (
-    <section aria-labelledby="why-choose-us-heading" className="bg-slate-900 py-20 text-white">
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-12">
+    <section aria-labelledby="why-choose-us-heading" className="bg-slate-900 py-12 sm:py-16 lg:py-20 text-white">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {/* Section header */}
         <div className="mx-auto max-w-2xl text-center">
@@ -81,11 +81,11 @@ export default function WhyChooseUsSection() {
           </p>
           <h2
             id="why-choose-us-heading"
-            className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl"
+            className="mt-4 text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-white"
           >
             Mentorship designed for real career acceleration.
           </h2>
-          <p className="mt-4 text-lg leading-8 text-slate-400">
+          <p className="mt-4 text-base sm:text-lg leading-8 text-slate-400">
             We connect you with proven leaders who give you the guidance, feedback,
             and accountability you need to level up — fast.
           </p>
@@ -94,12 +94,12 @@ export default function WhyChooseUsSection() {
         {/* Benefits grid */}
         <ul
           role="list"
-          className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          className="mt-12 sm:mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
         >
           {benefits.map((benefit) => (
             <li
               key={benefit.title}
-              className="rounded-2xl border border-white/10 bg-white/5 p-8 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30 hover:bg-white/[0.08]"
+              className="rounded-2xl border border-white/10 bg-white/5 p-6 sm:p-8 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/30 hover:bg-white/[0.08]"
             >
               {/* Icon */}
               <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-300">

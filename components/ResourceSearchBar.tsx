@@ -13,12 +13,18 @@ export default function ResourceSearchBar({
   onSearch,
   placeholder = 'Search learning tracks, articles, tools, and templates...',
 }: ResourceSearchBarProps) {
-  const searchParams = useSearchParams();
-  const [query, setQuery] = useState(() => searchParams.get('q') ?? '');
+  let searchParams: ReturnType<typeof useSearchParams> | null = null;
+  try {
+    searchParams = useSearchParams();
+  } catch {
+    searchParams = null;
+  }
+  const [query, setQuery] = useState(() => searchParams?.get('q') ?? '');
   const router = useRouter();
 
   // Keep query in sync if URL param changes externally (e.g. from HeroSearchBar)
   useEffect(() => {
+    if (!searchParams) return;
     const q = searchParams.get('q');
     if (q !== null) setQuery(q);
   }, [searchParams]);
@@ -32,7 +38,7 @@ export default function ResourceSearchBar({
   };
 
   return (
-    <div className="w-full max-w-3xl mx-auto px-4 py-6">
+    <div className="w-full max-w-3xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
       <form onSubmit={handleSubmit} role="search" className="relative" aria-label="Search resources">
         <label htmlFor="resource-search" className="sr-only">
           Search learning resources, guides, and templates
@@ -47,11 +53,11 @@ export default function ResourceSearchBar({
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder={placeholder}
-            className="block w-full p-4 pl-12 pr-28 text-sm md:text-base text-gray-900 border border-gray-200 rounded-full bg-white shadow-sm hover:border-gray-300 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 dark:bg-gray-800 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:border-cyan-500 dark:focus:ring-cyan-500/20 transition-all outline-none"
+            className="block w-full p-4 pl-12 pr-24 sm:pr-28 text-sm md:text-base text-gray-900 border border-gray-200 rounded-full bg-white shadow-sm hover:border-gray-300 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 dark:bg-gray-800 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:border-cyan-500 dark:focus:ring-cyan-500/20 transition-all outline-none"
           />
           <button
             type="submit"
-            className="absolute right-2 top-1.5 bottom-1.5 px-6 text-sm font-medium text-white bg-cyan-600 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 rounded-full transition-all cursor-pointer"
+            className="absolute right-2 top-1.5 bottom-1.5 px-4 sm:px-6 text-sm font-medium text-white bg-cyan-600 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 rounded-full transition-all cursor-pointer"
           >
             Search
           </button>

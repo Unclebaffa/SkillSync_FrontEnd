@@ -109,10 +109,10 @@ export default function FeaturedMentorHighlight() {
               </div>
 
               {/* CTA */}
-              <div className="flex flex-wrap gap-3 mt-1">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3 mt-1">
                 <Link
                   href="/mentors/sarah-doe"
-                  className="inline-flex items-center justify-center rounded-lg bg-cyan-600 px-6 py-3 text-sm font-semibold text-white hover:bg-cyan-700 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:focus:ring-cyan-900 transition-colors"
+                  className="inline-flex items-center justify-center w-full sm:w-auto rounded-lg bg-cyan-600 px-6 py-3 text-sm font-semibold text-white hover:bg-cyan-700 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:focus:ring-cyan-900 transition-colors"
                 >
                   View Profile
                   <svg className="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
@@ -121,7 +121,7 @@ export default function FeaturedMentorHighlight() {
                 </Link>
                 <Link
                   href="/register"
-                  className="inline-flex items-center justify-center rounded-lg border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 px-6 py-3 text-sm font-semibold text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 transition-colors"
+                  className="inline-flex items-center justify-center w-full sm:w-auto rounded-lg border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 px-6 py-3 text-sm font-semibold text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 transition-colors"
                 >
                   Book a Session
                 </Link>

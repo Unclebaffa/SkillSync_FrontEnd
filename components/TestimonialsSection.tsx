@@ -60,7 +60,7 @@ export default function TestimonialsSection() {
   return (
     <section
       aria-labelledby="testimonials-heading"
-      className="bg-slate-50 dark:bg-gray-800/40 py-16 sm:py-20 border-t border-gray-100 dark:border-gray-800 transition-colors"
+      className="bg-slate-50 dark:bg-gray-800/40 py-12 sm:py-16 lg:py-20 border-t border-gray-100 dark:border-gray-800 transition-colors"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section header */}
@@ -70,11 +70,11 @@ export default function TestimonialsSection() {
           </p>
           <h2
             id="testimonials-heading"
-            className="mt-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl"
+            className="mt-4 text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-gray-900 dark:text-white"
           >
             What our community says
           </h2>
-          <p className="mt-4 text-lg leading-8 text-gray-600 dark:text-gray-400">
+          <p className="mt-4 text-base sm:text-lg leading-8 text-gray-600 dark:text-gray-400">
             Real stories from professionals who transformed their careers through
             SkillSync.
           </p>

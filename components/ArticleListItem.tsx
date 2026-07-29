@@ -15,7 +15,7 @@ export default function ArticleListItem({ category, title, author, readTime, hre
     <article className={className}>
       <Link
         href={targetHref}
-        className="flex items-center justify-between gap-4 py-4 px-2 hover:bg-slate-50 dark:hover:bg-gray-800/60 rounded-xl transition-all group focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2"
+        className="flex items-center justify-between gap-4 py-4 px-2 hover:bg-slate-50 dark:hover:bg-gray-800/60 rounded-xl transition-all group focus:outline-none focus:ring-2 focus:ring-cyan-500 dark:focus:ring-cyan-500 focus:ring-offset-2"
       >
         <div>
           <header>

@@ -12,15 +12,15 @@ const articles = [
 
 export default function FeaturedArticles() {
   return (
-    <section className="bg-white dark:bg-gray-900 py-12 px-4 transition-colors" aria-labelledby="articles-heading">
+    <section className="bg-white dark:bg-gray-900 py-12 sm:py-16 px-4 sm:px-6 lg:px-8 transition-colors" aria-labelledby="articles-heading">
       <div className="mx-auto max-w-screen-xl">
-        <div className="flex items-center justify-between mb-8">
-          <h2 id="articles-heading" className="text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+        <div className="flex flex-row items-center justify-between gap-4 mb-8">
+          <h2 id="articles-heading" className="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">
             Featured Articles
           </h2>
           <Link 
             href="/resources/articles" 
-            className="text-sm font-semibold text-cyan-600 hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300 transition-colors focus:outline-none focus:underline"
+            className="text-sm font-semibold text-cyan-600 hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300 transition-colors focus:outline-none focus:underline shrink-0"
           >
             View All Articles &rarr;
           </Link>

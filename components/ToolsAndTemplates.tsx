@@ -20,9 +20,9 @@ const tools = [
 
 export default function ToolsAndTemplates() {
   return (
-    <section className="bg-white dark:bg-gray-900 py-12 px-4 transition-colors" aria-labelledby="tools-heading">
+    <section className="bg-white dark:bg-gray-900 py-12 sm:py-16 px-4 sm:px-6 lg:px-8 transition-colors" aria-labelledby="tools-heading">
       <div className="mx-auto max-w-screen-xl">
-        <h2 id="tools-heading" className="text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight mb-8">
+        <h2 id="tools-heading" className="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight mb-8">
           Tools &amp; Templates
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

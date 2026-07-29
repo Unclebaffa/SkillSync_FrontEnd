@@ -29,8 +29,8 @@ const stats: Stat[] = [
 
 export default function PlatformStatisticsSection() {
   return (
-    <section aria-labelledby="platform-stats-heading" className="bg-slate-950 py-20">
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-12">
+    <section aria-labelledby="platform-stats-heading" className="bg-slate-950 py-12 sm:py-16 lg:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {/* Section header */}
         <div className="mx-auto max-w-2xl text-center">
@@ -39,17 +39,17 @@ export default function PlatformStatisticsSection() {
           </p>
           <h2
             id="platform-stats-heading"
-            className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl"
+            className="mt-4 text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-white"
           >
             Trusted by professionals worldwide.
           </h2>
-          <p className="mt-4 text-lg leading-8 text-slate-400">
+          <p className="mt-4 text-base sm:text-lg leading-8 text-slate-400">
             Real numbers from real people who have invested in their growth through SkillSync.
           </p>
         </div>
 
         {/* Stats grid */}
-        <dl className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <dl className="mt-12 sm:mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat) => (
             <div
               key={stat.label}

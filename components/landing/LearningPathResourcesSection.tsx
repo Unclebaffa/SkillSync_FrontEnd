@@ -117,8 +117,8 @@ const quickAccessItems: QuickAccessItem[] = [
 
 export default function LearningPathResourcesSection() {
   return (
-    <section aria-labelledby="learning-resources-heading" className="bg-slate-50 py-20">
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-12">
+    <section aria-labelledby="learning-resources-heading" className="bg-slate-50 py-12 sm:py-16 lg:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {/* Section header */}
         <div className="mx-auto max-w-2xl text-center">
@@ -127,20 +127,20 @@ export default function LearningPathResourcesSection() {
           </p>
           <h2
             id="learning-resources-heading"
-            className="mt-4 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl"
+            className="mt-4 text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-slate-900"
           >
             Structured paths to accelerate your career journey.
           </h2>
-          <p className="mt-4 text-lg leading-8 text-slate-600">
+          <p className="mt-4 text-base sm:text-lg leading-8 text-slate-600">
             Explore curated learning tracks and resource collections designed to help you
             build skills, gain confidence, and advance your career.
           </p>
         </div>
 
         {/* Learning tracks */}
-        <div className="mt-16">
+        <div className="mt-12 sm:mt-16">
           <div className="flex items-center justify-between">
-            <h3 className="text-xl font-semibold text-slate-900">Learning tracks</h3>
+            <h3 className="text-lg sm:text-xl font-semibold text-slate-900">Learning tracks</h3>
             <Link
               href="/resources/tracks"
               className="text-sm font-medium text-cyan-600 transition hover:text-cyan-500"
@@ -149,7 +149,7 @@ export default function LearningPathResourcesSection() {
             </Link>
           </div>
 
-          <div className="mt-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-6 grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {learningTracks.map((track, index) => (
               <LearningTrackCard
                 key={track.title}
@@ -162,9 +162,9 @@ export default function LearningPathResourcesSection() {
         </div>
 
         {/* Quick access resources */}
-        <div className="mt-20">
+        <div className="mt-16 sm:mt-20">
           <div className="flex items-center justify-between">
-            <h3 className="text-xl font-semibold text-slate-900">Quick access resources</h3>
+            <h3 className="text-lg sm:text-xl font-semibold text-slate-900">Quick access resources</h3>
             <Link
               href="/resources"
               className="text-sm font-medium text-cyan-600 transition hover:text-cyan-500"
@@ -193,10 +193,10 @@ export default function LearningPathResourcesSection() {
         </div>
 
         {/* CTA */}
-        <div className="mt-16 text-center">
+        <div className="mt-12 sm:mt-16 text-center">
           <Link
             href="/resources"
-            className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-8 py-4 text-sm font-semibold text-slate-900 shadow-sm transition hover:border-cyan-500 hover:bg-cyan-50"
+            className="inline-flex items-center justify-center w-full sm:w-auto gap-2 rounded-full border border-slate-300 bg-white px-8 py-4 text-sm font-semibold text-slate-900 shadow-sm transition hover:border-cyan-500 hover:bg-cyan-50"
           >
             Explore all resources
             <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden="true">

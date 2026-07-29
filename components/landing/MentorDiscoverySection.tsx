@@ -43,15 +43,15 @@ export default function MentorDiscoverySection() {
       className="bg-gray-50 dark:bg-gray-800/40 border-t border-gray-100 dark:border-gray-800 transition-colors"
       aria-labelledby="mentors-heading"
     >
-      <div className="py-12 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <div className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 mx-auto max-w-screen-xl">
         <div className="mx-auto max-w-screen-sm text-center mb-10 lg:mb-14">
           <h2
             id="mentors-heading"
-            className="mb-4 text-3xl md:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+            className="mb-4 text-2xl sm:text-3xl md:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
           >
             Meet Our Mentors
           </h2>
-          <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+          <p className="font-light text-gray-500 text-base sm:text-lg lg:text-xl dark:text-gray-400">
             Our mentors are industry experts with a passion for sharing their
             knowledge and guiding you.
           </p>
@@ -61,10 +61,10 @@ export default function MentorDiscoverySection() {
             <MentorCard key={mentor.mentorId} {...mentor} />
           ))}
         </div>
-        <div className="text-center mt-8">
+        <div className="text-center mt-8 sm:mt-10">
           <Link
             href="/mentors"
-            className="inline-flex items-center justify-center rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-6 py-2.5 text-sm font-semibold text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 transition-colors"
+            className="inline-flex items-center justify-center w-full sm:w-auto rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-6 py-3 text-sm font-semibold text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 transition-colors"
           >
             View All Mentors
           </Link>
